@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:text="Priority"
+                android:textSize="18sp"
+                />
+
+            <Spinner
+                android:id="@+id/priority_check"
+                android:background="@drawable/dropdown_final"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="5dp"
+                android:entries="@array/priority_values"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter School Id (include M)"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!-- Text Input -->
+            <EditText
+                android:id="@+id/Studentid"
+                android:background="@drawable/ic_white_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="M14445678"
+                android:inputType="text"
+                android:padding="4dp" />
+
+            <!-- Checkbox Buttons -->
+            <CheckBox
+                android:id="@+id/macos"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="MacOS"/>
+
+            <CheckBox
+                android:id="@+id/winos"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Windows"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:text="Device Number - 6 Digit"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/devNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_white_background"
+                android:hint="123456"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="5dp" />
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/check_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:background="@drawable/ic_blue_background"
+                android:text="Check Inputs" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:inputType="none"
+                android:lines="5"
+                android:scrollbars="vertical"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/sub_button"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:background="@drawable/ic_blue_background"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</ScrollView>
